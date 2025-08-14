@@ -2,10 +2,12 @@ package colorcoder;
 
 public class Main {
     public static void main(String[] args) {
-        ColorCoderTest.testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
-        ColorCoderTest.testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
+        // Test mapping from colors to number
+        int pairNumber = ColorCodeMapper.getPairNumberFromColors(MajorColor.RED, MinorColor.GREEN);
+        System.out.println("RED - GREEN Pair Number: " + pairNumber);
 
-        ColorCoderTest.testPairToNumber(MajorColor.BLACK, MinorColor.ORANGE, 12);
-        ColorCoderTest.testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
+        // Test mapping from number to colors
+        ColorPair pair = ColorCodeMapper.getColorsFromPairNumber(12);
+        System.out.println("Pair Number 12 is: " + pair);
     }
 }
