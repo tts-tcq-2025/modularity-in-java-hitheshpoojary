@@ -2,7 +2,7 @@ package colorcoder;
 
 public class ColorCodeMapper {
 
-    public static int getPairNumberFromColors(MajorColor major, MinorColor minor) {
+    public static int getPairNumberFromColors(IndexProvider major, IndexProvider minor) {
         return major.getIndex() * MinorColor.values().length + minor.getIndex() + 1;
     }
 
