@@ -1,6 +1,6 @@
 package colorcoder;
 
-public enum MinorColor  implements IndexProvider{
+public enum MinorColor implements IndexProvider {
     BLUE(0),
     ORANGE(1),
     GREEN(2),
@@ -27,3 +27,4 @@ public enum MinorColor  implements IndexProvider{
         return null;
     }
 }
+
