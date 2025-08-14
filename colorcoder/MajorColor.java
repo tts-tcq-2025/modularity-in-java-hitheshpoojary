@@ -1,6 +1,6 @@
 package colorcoder;
 
-public enum MajorColor implements IndexProvider{
+public enum MajorColor implements IndexProvider {
     WHITE(0),
     RED(1),
     BLACK(2),
@@ -13,12 +13,11 @@ public enum MajorColor implements IndexProvider{
         this.index = index;
     }
 
-
     @Override
     public int getIndex() {
         return index;
     }
-    
+
     public static MajorColor fromIndex(int index) {
         for (MajorColor color : MajorColor.values()) {
             if (color.getIndex() == index) {
@@ -28,3 +27,4 @@ public enum MajorColor implements IndexProvider{
         return null;
     }
 }
+
